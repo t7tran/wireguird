@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo "wireguird: cleaning..."
 
 deb_file="./build/wireguird_amd64.deb"
@@ -13,10 +15,8 @@ fi
 mkdir -p "$opt_w_dir"
 
 echo "wireguird: building go binary..."
-time {
   go generate
   go build -ldflags "-s -w" -trimpath -o "$opt_w_dir""wireguird"
-}
 
 echo "wireguird: copying icons..."
 cp -r ./Icon/ "$opt_w_dir"
