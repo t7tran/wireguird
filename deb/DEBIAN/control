@@ -4,6 +4,6 @@ Version: 1.1.100
 Section: utils
 Priority: extra
 Architecture: amd64
-Depends: wireguard-tools, resolvconf, libayatana-appindicator3-1
+Depends: wireguard-tools, libayatana-appindicator3-1
 Maintainer: UnnoTed
 Description: GTK GUI for Wireguard
